@@ -1,0 +1,647 @@
+
+body {
+    margin:0;
+    padding:0;
+}
+.header {
+    color:red;
+    text-transform:uppercase;
+    text-align:center;
+    text-shadow:3px 3px 25px black;
+    font-size:30px;
+    transition:1.5s;
+}
+.principal {
+    height:95%;
+    width:95%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    overflow:scroll;
+    margin:5px auto;
+    padding:20px;
+    border-radius:20px;
+    transition:1.5s;
+}
+.assistantPrin {
+    height:auto;
+    width:95%;
+    border:2px solid Gray;
+    margin:15px auto;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0px 0px 15.0px 10px black;
+    transition:1.5s;
+}
+
+/*FIRST CONTAINER START*/
+.container {
+    height:630px;
+    width:630px;
+    margin:0 auto;
+    background:rgba(0,0,0,0.2);
+    border-radius:20px;
+    position:relative;
+    padding:5px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:around;
+    align-items:strech;
+    transition:1.5s;
+}
+.btn {
+    text-align:center;
+    font-size:28px;
+    background:Gray;
+    color:rgba(245,255,255,1);
+    font-family:Montserrat;
+    border:5px solid rgba(0,0,0,0.5);
+    padding:10px;
+    margin:7px;
+    border-radius:9px;
+    transition:0.4s;
+}
+.btnAdd {
+    color:rgba(0,245,0,0.9);
+    text-shadow:0px 0px 8px rgba(0,245,0,0.5);
+    border-color:rgba(0,200,0,0.7);
+    box-shadow:0px 0px 10px 5px black;
+}
+.btnAdd2 {
+    color:rgba(245,0,0,0.9);
+    background-color:White;
+    text-shadow:0px 0px 12px rgba(245,0,0,0.5);
+    border-color:rgba(200,0,0,0.7);
+    box-shadow:0px 0px 30px 3px red;
+}
+.box {
+    height:200px;
+    width:200px;
+    max-height:200px;
+    max-width:200px;
+    margin:5px;
+    background:Black;
+    border-radius:15px;
+    position:relative;
+    animation-iteration-count:infinite;
+    animation-duration:1s;
+    animation-timing-function:ease;
+    color:Black;
+    font-size:35px;
+    font-weight:bolder;
+    font-family:Montserrat;
+    text-align:center;
+    line-height:200px;
+    transition:1.5s;
+}
+.box:nth-child(1) {
+    animation-delay:0s;
+}
+.box:nth-child(2) {
+    animation-delay:0.1s;
+}
+.box:nth-child(3) {
+    animation-delay:0.2s;
+}
+.box:nth-child(4) {
+    animation-delay:0.5s;
+}
+.box:nth-child(5) {
+    animation-delay:0.4s;
+}
+.box:nth-child(6) {
+    animation-delay:0.3s;
+}
+.box:nth-child(7) {
+    animation-delay:0.6s;
+}
+.box:nth-child(8) {
+    animation-delay:0.7s;
+}
+.box:nth-child(9) {
+    animation-delay:0.8s;
+}
+/*bok anima*/
+.bo {
+    animation-name:lo;
+    animation-duration:0.8s;
+}
+.bo:nth-child(5) {
+    animation-duration:0s;
+}
+.bo:nth-child(1) {
+    animation-delay:0s;
+}
+.bo:nth-child(2) {
+    animation-delay:0.1s;
+}
+.bo:nth-child(3) {
+    animation-delay:0.2s;
+}
+.bo:nth-child(4) {
+    animation-delay:0.7s;
+}
+.bo:nth-child(6) {
+    animation-delay:0.3s;
+}
+.bo:nth-child(7) {
+    animation-delay:0.6s;
+}
+.bo:nth-child(8) {
+    animation-delay:0.5s;
+}
+.bo:nth-child(9) {
+    animation-delay:0.4s;
+}
+
+.anima1 {
+    animation-name:load;
+}
+.anima2 {
+    animation-name:load2;
+}
+@keyframes lo {
+    0% {
+        background:red;
+    }
+    100% {
+        background:Black;
+    }
+}
+@keyframes load {
+    0% {
+        background:red;
+    }
+    100% {
+        background:Black;
+    }
+}
+@keyframes load2 {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(180deg);
+    }
+}
+.bth {
+    animation-name:lol;
+}
+@keyframes lol {
+    0% {
+        background:red;
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(180deg);
+    }
+    100% {
+        background:Black;
+    }
+}
+/*.continu {
+    animation-play-state:running;
+}*/
+.grp {
+    height:90px;
+    width:110px;
+    margin:10px auto;
+    padding:0px;
+    position:relative;
+    padding-right:10px;
+    transition:1.5s;
+}
+.b {
+    height:45px;
+    width:100%;
+    position:relative;
+    background:rgba(0,240,0,0.2); 
+    padding:0px;
+    border-radius:500px;
+    border:5px solid Black;
+    transition:1.5s;
+}
+.bgRed {
+    background:rgba(240,0,0,0.2);
+    transition-duration:0.2s;
+}
+.dot {
+    position:absolute;
+    overflow:hidden;
+    left:7px;
+    top:7px;
+    height:41px;
+    width:41px;
+    background:Green;
+    transition-duration:0.3s;
+    border-radius:50%;
+}
+.act {
+    left:72px;
+    background:Red;
+    transition-duration:0.2s;
+}
+.l1 , .l2 {
+    font-size:30px;
+    font-weight:bolder;
+    margin:5px;
+    text-align:center;
+    transition-duration:0.2s;
+}
+.l1 {
+    display:block;
+    color:green;
+}
+.l2 {
+    display:none;
+}
+.dn {
+    display:none;    
+}
+.db {
+    display:block;
+}
+.autoMargin {
+    height:auto;
+    width:90%;
+    margin:10px auto;
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:strech;
+    transition:1.5s;
+}
+@font-face {
+    font-family:"Montserrat";
+    src:url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family:"Varela";
+    src:url(../fonts/VarelaRound-Regular.otf);
+}
+@font-face {
+    font-family:"A";
+    src:url(../fonts/A.ttf);
+}
+@font-face {
+    font-family:"B";
+    src:url(../fonts/B.ttf);
+}
+@font-face {
+    font-family:"C";
+    src:url(../fonts/JosefinSans-Regular.ttf);
+}
+.h {
+    text-align:center;
+    font-family:C;
+    font-size:45px;
+}
+.ah {
+    text-align:center;
+    font-family:C;
+    font-size:25px;
+    transition:1.5s;
+}
+.sha {
+    color:#000;
+    text-shadow:3px 3px 5px black,
+                -3px 6px 5px gray,
+                3px 9px 5px lime,
+                -3px 12px 5px orange,
+                3px 15px 5px red;
+    animation-name:l;
+    animation-iteration-count:infinite;
+    animation-duration:1s;
+    animation-timing-function:ease-in-out;
+    transition:1.5s;
+}
+@-webkit-keyframes l {
+    0% {
+        text-shadow:3px 3px 5px black,
+                -3px 6px 5px gray,
+                3px 9px 5px lime,
+                -3px 12px 5px orange,
+                3px 15px 5px red;
+    }
+    20% {
+        text-shadow:3px 3px 5px red,
+                -3px 6px 5px black,
+                3px 9px 5px gray,
+                -3px 12px 5px lime,
+                3px 15px 5px orange;
+    }
+    40%{
+        text-shadow:3px 3px 5px orange,
+                -3px 6px 5px red,
+                3px 9px 5px black,
+                -3px 12px 5px grey,
+                3px 15px 5px lime;
+    }
+    60% {
+        text-shadow:3px 3px 5px lime,
+                -3px 6px 5px orange,
+                3px 9px 5px red,
+                -3px 12px 5px black,
+                3px 15px 5px gray;
+    }
+    80% {
+        text-shadow:3px 3px 5px gray,
+                -3px 6px 5px lime,
+                3px 9px 5px orange,
+                -3px 12px 5px red,
+                3px 15px 5px black;
+    }
+}
+.shen {
+    animation-play-state:paused;
+}
+
+/*FIRST CONTAINER END--------------×××--------------*/
+
+/*SECOND CONTAINER START*/
+
+.containeer {
+    height:610px;
+    width:610px;
+    margin:0 auto;
+    background:rgba(0,0,0,0.2);
+    border-radius:20px;
+    position:relative;
+    padding:5px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:around;
+    align-items:strech;
+    transition:1.5s;
+}
+
+.bar {
+    height:300px;
+    width:50px;
+    background-color:red;
+    position:absolute;
+    border-radius:25px;
+    transition:1.5s;
+    transform-origin:50% 50%;
+    transition:1.5s;
+    /*animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-delay:2s;*/
+}
+.bar:nth-child(1) {
+    background:Red;
+    left:195px;
+    top:160px;
+}
+.bar:nth-child(2) {
+    background:Green;
+    left:255px;
+    top:160px;
+}
+.bar:nth-child(3) {
+    background:Yellow;
+    left:315px;
+    top:160px;
+}
+.bar:nth-child(4) {
+    background:Blue;
+    left:375px;
+    top:160px;
+}
+
+/*
+.bar:nth-child(1) {
+    background:Red;
+    left:195px;
+    top:160px;
+    transform:translate(-35px, 0px) rotate(0deg);
+}
+.bar:nth-child(2) {
+    background:Green;
+    left:255px;
+    top:160px;
+    transform:translate(30px, -125px) rotate(90deg);
+}
+.bar:nth-child(3) {
+    background:Yellow;
+    left:315px;
+    top:160px;
+    transform:translate(-30px, 125px) rotate(-90deg);
+    animation-name:final2;
+}
+.bar:nth-child(4) {
+    background:Blue;
+    left:375px;
+    top:160px;
+    transform:translate(35px, 0px) rotate(0deg);
+    animation-name:final;
+}
+@-webkit-keyframes final {
+    20% {
+        transform:translate(-90px, 125px) rotate(-90deg);
+    }
+    40% {
+        transform:translate(-215px, 0px) rotate(-180deg);
+    }
+    60% {
+        transform:translate(-90px, -125px) rotate(-270deg);
+    }
+    80% {
+        transform:translate(35px, 0px) rotate(-360deg);
+    }
+    100% {
+        transform:translate(35px, 0px) rotate(0deg);
+    }
+}
+@-webkit-keyframes final2 {
+    20% {
+        transform:translate(-30px, 125px) rotate(-90deg);
+    }
+    40% {
+        transform:translate(-155px, 0px) rotate(-180deg);
+    }
+    60% {
+        transform:translate(-30px, -125px) rotate(-270deg);
+    }
+}*/
+.lod::before {
+    content:'Loading...';
+    width:100%;
+    height:auto;
+    color:Black;
+    font-size:35px;
+    font-weight:bolder;
+    position:absolute;
+    font-family:Montserrat;
+    text-align:center;
+    transform:translateY(500px);
+    animation:blink 1s ease-in-out 2s infinite;
+}
+.lod2::before {
+    content:'Loading...';
+    width:100%;
+    height:auto;
+    color:Black;
+    font-size:35px;
+    font-weight:bolder;
+    position:absolute;
+    font-family:Montserrat;
+    text-align:center;
+    animation:blink2 1s ease-in-out 2s infinite;
+    top:50%;
+    transform:translateY(-50%);
+}
+@-webkit-keyframes blink {
+    50% {
+        opacity:0;
+    }
+}
+@-webkit-keyframes blink2 {
+    50% {
+        opacity:0;
+    }
+}
+
+/*---*//*---*//*---*/
+.sab {
+    border-radius:9px;
+    animation-duration:2s;
+    animation-timing-function:ease;
+    animation-iteration-count:infinite;
+    animation-delay:2s;
+}
+.sab:nth-child(1) {
+    background:Red;
+    left:195px;
+    top:160px;
+    transform:translate(0px, 0px) rotate(0deg);
+    animation-name:move1;
+    z-index:6;
+}
+.sab:nth-child(2) {
+    background:Green;
+    left:255px;
+    top:160px;
+    transform:translate(30px, -95px) rotate(90deg);
+    animation-name:move2;
+}
+.sab:nth-child(3) {
+    background:Yellow;
+    left:315px;
+    top:160px;
+    transform:translate(-30px, 95px) rotate(-90deg);
+    animation-name:move3;
+}
+.sab:nth-child(4) {
+    background:Blue;
+    left:375px;
+    top:160px;
+    z-index:6;
+    transform:translate(0px, 0px) rotate(0deg);
+    animation-name:move4;
+}
+
+@-webkit-keyframes move1 {50% {transform:translate(180px, 0px) rotate(0deg);z-index:-4;}}
+@-webkit-keyframes move2 {50% {transform:translate(30px, 95px) rotate(90deg);}}
+@-webkit-keyframes move3 {50% {transform:translate(-30px, -95px) rotate(-90deg);}}
+@-webkit-keyframes move4 {50% {transform:translate(-180px, 0px) rotate(0deg);z-index:-4;}}
+
+
+/*---*//*---*//*---*/
+.baar {
+    animation-timing-function:ease;
+    animation-iteration-count:infinite;
+    animation-delay:2s;
+    animation-duration:2s;
+    transition:2s;
+}
+.baar:nth-child(1) {
+    background:Red;
+    left:195px;
+    top:160px;
+    transform:translate(1.5px, -88.5px) rotate(45deg) scaleY(1);
+    animation-name:color1;
+}
+.baar:nth-child(2) {
+    background:Green;
+    left:195px;
+    top:160px;
+    transform:translate(1.5px, 88.5px) rotate(-45deg) scaleY(1);
+    animation-name:color2;
+}
+.baar:nth-child(3) {
+    background:Yellow;
+    left:375px;
+    top:160px;
+    transform:translate(-1.5px, 88.5px) rotate(45deg) scaleY(1);
+    animation-name:color3;z-index:3;
+}
+.baar:nth-child(4) {
+    background:Blue;
+    left:375px;
+    top:160px;
+    transform:translate(-1.5px, -88.5px) rotate(-45deg) scaleY(1);
+    animation-name:color4;
+}
+@-webkit-keyframes color1 {25% {background:Green;} 50% {background:Yellow;} 75% {background:Blue;}}
+@-webkit-keyframes color2 {25% {background:Yellow;}50%{background:Blue;}75% {background:Red;}}
+@-webkit-keyframes color3 {25% {background:Blue;}50% {background:Red;}75% {background:Green;}}
+@-webkit-keyframes color4 {25% {background:Red;}50% {background:Green;}75% {background:Yellow;}}
+/*---*//*---*//*---*/
+.bal {
+    border-radius:9px;
+    animation:ani1 1.2s ease-in-out infinite;
+}
+.bal:nth-child(1) {
+    animation-delay:2s;
+}
+.bal:nth-child(2) {
+    animation-delay:2.1s;
+}
+.bal:nth-child(3) {
+    animation-delay:2.2s;
+}
+.bal:nth-child(4) {
+    animation-delay:2.3s;
+}
+
+@-webkit-keyframes ani1 {40% {transform:scaleY(0.3334);}80% {transform:scaleY(1);}}
+
+
+
+
+
+.vert {
+    height:610px;
+    width:1px;
+    background:Black;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.hori {
+    height:610px;
+    width:1px;
+    background:Black;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%) rotateZ(90deg);
+}
+
+/*SECOND CONTAINER END--------------×××--------------*/
+
+/*THIRD CONTAINER START*/
+
+
+
+/*THIRD CONTAINER END--------------×××--------------*/
+
+
+
+.paus {
+    animation-play-state:paused;
+}
