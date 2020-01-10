@@ -274,23 +274,23 @@ body {
 }
 @font-face {
     font-family:"Montserrat";
-    src:url(../fonts/Montserrat-Regular.otf);
+    src:url(Montserrat-Regular.otf);
 }
 @font-face {
     font-family:"Varela";
-    src:url(../fonts/VarelaRound-Regular.otf);
+    src:url(VarelaRound-Regular.otf);
 }
 @font-face {
     font-family:"A";
-    src:url(../fonts/A.ttf);
+    src:url(A.ttf);
 }
 @font-face {
     font-family:"B";
-    src:url(../fonts/B.ttf);
+    src:url(B.ttf);
 }
 @font-face {
     font-family:"C";
-    src:url(../fonts/JosefinSans-Regular.ttf);
+    src:url(JosefinSans-Regular.ttf);
 }
 .h {
     text-align:center;
